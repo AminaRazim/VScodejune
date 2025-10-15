@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>Registration Form</h1></center>
+    <form id="form1" action="page3.html" method="post">
+        <table align="center">
+            <tr>
+                <td><label>Name:</label></td><td><input type="text" id="t1" name="text1" placeholder="Enter the name" required></button></td>
+                <tr><td><label>Password:</label></td><td><input type="password" required></td></tr>
+                <tr><td><label>Address:</label></td><td><textarea></textarea></td></tr>
+                <tr><td><label>Age:</label></td><td><input type="number" min="20" max="50"/></td></tr>
+                <tr><td><label>Date:</label></td><td><input type="Date"/></td></tr>
+                <tr><td><label>Email:</label></td><td><input type="email"/></td></tr>
+                <tr><td><label>Phone:</label></td><td><input type="tel" pattern="\d{10}"/></td></tr>
+                <tr><td><label>Gender:</label></td><td><input type="radio" value="Male" name="rb"/>Male<input type="radio" value="Female" name="rb"/>Female</td></tr>
+                <tr><td><label>Qualification:</label></td><td><input type="checkbox" value="SSLC" name="cb1"/>SSLC<input type="checkbox" value="PLUSTWO" name="cb2"/>PLUSTWO<input type="checkbox" value="BCA" name="cb3"/>BCA</td></tr>
+                <tr><td><label>Photo:</label></td><td><input type="file"/></td></tr>
+                <tr><td><label>State:</label></td><td><select name="ddl"><option disabled selected>Select</option><option>Kerala</option><option>Karntaka</option><option>TamilNadu</option></td></tr>
+                <tr><td><input type="submit" value="Register"></td></tr>
+            </tr>
+        </table>   
+    </form>
+</body>
+</html>

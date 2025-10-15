@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div class="container mt-3">
+    <h2>User Details</h2>
+    <form>
+        <div class="mb-3 mt-3">
+            <label for="username" class="text-primary form-label">Name:</label>
+            <input type="text" class="form-control " id="name" placeholder="Enter Name" name="name" required>
+        </div>
+
+        <div class="mb-3 mt-3">
+            <label for="email" class="text-primary form-label">Email:</label>
+            <input type="text" class="form-control text-success" id="email" placeholder="Enter Email" name="email" required>
+        </div>
+
+        <div class="mb-3 mt-3">
+            <label for="password" class="text-primary form-label">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter Password" name="password" required>
+        </div>
+
+        <div class="mb-3 mt-3">
+            <label for="address" class="text-primary form-label">Address:</label>
+            <textarea class="form-control" rows="3" id="address" name="address"></textarea>
+        </div>
+
+        <div class="mb-3 mt-3">
+            <div class="form-group row">
+            <label for="phone" class="text-primary" class="form-label">Phone:</label>
+            <div class="form-outline w-25">
+            <input type="countrycode" maxlength="3" minlength="3" pattern="(?:+d {1,3})?”" id="txt1" class="form-control" placeholder="Enter code" name="code" required>
+            </div>
+            <div class="form-outline w-50">
+                <input type="number" class="form-control" placeholder="Enter Number" name="number">
+            </div>
+            </div> 
+        </div>
+
+        <div class="mb-3 mt-3">
+            <label for="district" class="text-primary" class="form-label">Select Distirct (Select one):</label>
+            <select class="form-select" id="seldis" name="district">
+                <option disabled selected>--Select--</option>
+                <option>Kottayam</option>
+                <option>Ernakulam</option>
+                <option>Idukki</option>
+                <option>Palakkad</option>
+            </select>
+        </div>
+
+        <div clas="mb-3 mt-3" id="d1">
+            <label for="colour" class="text-primary" class="form-label">Colour Picker</label>
+            <input type="color" class="form-control form-control-color" id="mycolor" value="#c10d0d" title="Choose a colour" name="colour">
+        </div>
+
+        <div class="mb-3 mt-3">
+            <label for="sel1" class="text-primary form-label">Select Department:</label>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check1" name="option1" value="BCA">
+                <label class="form-check-label" for="check1">BCA</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="B.COM">
+                <label class="form-check-label" for="check2">B.COM</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" name="option3" value="B.Tech">
+                <label class="form-check-label" for="check2">B.Tech</label>
+            </div>
+        </div>
+
+        <div class="mb-3 mt-3">
+            <label for="sel1" class="text-primary form-label">Select Gender:</label>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Male">
+                <label class="form-check-label" for="radio1">Male</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="Female">
+                <label class="form-check-label" for="radio2">Female</label>
+            </div>
+            </div>
+            <button type="submit" class="btn btn-success" title="click!">Submit</button>
+    </form>
+ </div>   
+</body>
+</html>
